@@ -2,13 +2,13 @@
 #include <float.h>
 
 int epsilon(){
-    int pow = 0;
+    int pow = 1;
     float epsilon = 1.0;
     while(epsilon + 1 != 1){
         epsilon /= 2;
         --pow;
     }
-    return pow + 1;
+    return pow;
 }
 
 int main(){
